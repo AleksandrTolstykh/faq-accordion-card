@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+<body>
+
+  <img class="illustration-box" src="images/illustration-box-desktop.svg" alt="">
+  <div class="card">
+
+    <div class="row">
+
+      <div class="col-lg-6">
+        <img class="bg-pattern-desktop" src="images/bg-pattern-desktop.svg" alt="">
+        <img class="bg-pattern-mobile" src="images/bg-pattern-mobile.svg" alt="">
+        <img class="illustration-woman-desktop" src="images/illustration-woman-online-desktop.svg" alt="">
+        <img class="illustration-woman-mobile" src="images/illustration-woman-online-mobile.svg" alt="">
+      </div>
+      <div class="col-lg-6">
+
+        <h1>FAQ</h1>
+        <div class="accordion" id="accordion">
+
+          <button class="btn btn-block text-left collapsed question" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              How many team members can I invite?
+              <img class="arrow" src="images/icon-arrow-down.svg" alt="">
+          </button>
+          <div id="collapseOne" class="collapse answer">
+            You can invite up to 2 additional users on the Free plan. There is no limit on
+            team members for the Premium plan.
+          </div>
+          <hr>
+
+          <button class="btn btn-block text-left collapsed question" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            What is the maximum file upload size?
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="">
+          </button>
+          <div id="collapseTwo" class="collapse answer">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </div>
+          <hr>
+
+          <button class="btn btn-block text-left collapsed question" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            How do I reset my password?
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="">
+          </button>
+          <div id="collapseThree" class="collapse answer">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </div>
+          <hr>
+
+          <button class="btn btn-block text-left collapsed question" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Can I cancel my subscription?
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="">
+          </button>
+          <div id="collapseFour" class="collapse answer">
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </div>
+          <hr>
+
+          <button class="btn btn-block text-left collapsed question" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Do you provide additional support?
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="">
+          </button>
+          <div id="collapseFive" class="collapse answer">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </div>
+          <hr>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/AleksandrTolstykh" target="_blank">Aleksandr Tolstykh</a>.
+  </div>
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+</html>

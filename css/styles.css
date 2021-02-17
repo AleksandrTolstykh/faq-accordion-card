@@ -1,0 +1,121 @@
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-size: 12px;
+}
+
+h1 {
+  color: hsl(238, 29%, 16%);
+  font-family: "Kumbh Sans";
+  font-weight: 700;
+  margin: 50px 50px 0;
+}
+
+hr {
+  background-color: hsl(240, 5%, 91%);
+  border: solid 1px;
+}
+
+.accordion {
+  padding: 30px;
+}
+
+.card {
+  margin: 7% 10%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.bg-pattern-desktop {
+  position: absolute;
+  bottom: -100px;
+  left: -230px;
+  width: 650px;
+}
+
+.bg-pattern-mobile {
+  display: none;
+  position: absolute;
+  width: 65%;
+  bottom: 83%;
+  left: 85px;
+}
+
+.illustration-woman-desktop {
+  position: absolute;
+  bottom: 50px;
+  left: -120px;
+  width: 550px;
+}
+
+.illustration-woman-mobile {
+  display: none;
+  position: relative;
+  width: 70%;
+  bottom: 55%;
+  left: 55px;
+}
+
+.illustration-box {
+  position: absolute;
+  bottom: 160px;
+  left: 3%;
+  width: 15%;
+  z-index: 1;
+}
+
+.arrow-rotate {
+  transform: rotate(180deg);
+}
+
+.question {
+  color: hsl(240, 6%, 50%);
+  font-family: "Kumbh Sans";
+  font-weight: 700;
+  width: 100%;
+  text-align: left;
+}
+
+.selected-question {
+  color: hsl(237, 12%, 33%);
+  font-family: "Kumbh Sans";
+  font-weight: 700;
+  width: 100%;
+  text-align: left;
+}
+
+.question:hover, .selected-question:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.answer {
+  color: hsl(240, 6%, 50%);
+  font-family: "Kumbh Sans";
+  font-weight: 400;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+ }
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 991px) {
+  h1 {
+    text-align: center;
+  }
+
+  .bg-pattern-desktop, .illustration-woman-desktop, .illustration-box {
+    display: none;
+  }
+
+  .bg-pattern-mobile, .illustration-woman-mobile {
+    display: block;
+  }
+
+  .card {
+    overflow: visible;
+  }
+}
